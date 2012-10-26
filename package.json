@@ -1,0 +1,9 @@
+{
+    "name": "autocompleteoff", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "Bryan Clark", 
+    "version": "0.2", 
+    "fullName": "autocompleteoff", 
+    "id": "jid1-KZsolV3q36BKQw", 
+    "description": "Allows Firefox to remember all username and passwords.  Tries not to interfere with other form types."
+}
