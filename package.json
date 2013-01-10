@@ -1,9 +1,17 @@
 {
     "name": "autocompleteoff", 
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
-    "author": "Bryan Clark", 
-    "version": "0.2", 
-    "fullName": "autocompleteoff", 
+    "author": "Bryan Clark (http://clarkbw.net/) <clarkbw@gmail.com>", 
+    "version": "1.0", 
+    "fullName": "Auto-Complete Off", 
     "id": "jid1-KZsolV3q36BKQw", 
-    "description": "Allows Firefox to remember all username and passwords.  Tries not to interfere with other form types."
+    "description": "Allows Firefox to remember all username and passwords.  Tries not to interfere with other types of forms.",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/clarkbw/autocompleteoff.git",
+        "web": "https://github.com/clarkbw/autocompleteoff"
+    },
+   "bugs": {
+        "web": "https://github.com/clarkbw/autocompleteoff/issues"
+    }
 }
