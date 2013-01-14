@@ -4,20 +4,44 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this file,
    - You can obtain one at http://mozilla.org/MPL/2.0/.  -->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input[name=password7]").attr("autocomplete", "off");
+        });
+    </script>
 </head>
 <body>
-<form id="Form" name="Login" method="POST" action="" autocomplete="off">
-    <input type="text"/>
-    <input type="password"/>
+<form id="Form" name="JustForm" method="POST" action="" autocomplete="off">
+    <input type="text" name="text1"/>
+    <input type="password" name="password1"/>
 </form>
-<form id="Password" name="Login" method="POST" action="">
-    <input type="text"/>
-    <input type="password" autocomplete="off"/>
+<form id="Password" name="JustPassword" method="POST" action="">
+    <input type="text" name="text2"/>
+    <input type="password" name="password2" autocomplete="off"/>
 </form>
-<form id="Search" name="Login" method="POST" action="">
-    <input type="text" autocomplete="off"/>
+<form id="Password" name="BothInputs" method="POST" action="">
+    <input type="text" name="text3" autocomplete="off"/>
+    <input type="password" name="password3" autocomplete="off"/>
+</form>
+<form id="Password" name="BothInputsAndForm" method="POST" action="" autocomplete="off">
+    <input type="text" name="text4" autocomplete="off"/>
+    <input type="password" name="password4" autocomplete="off"/>
+</form>
+<form id="Password" name="PasswordInputAndForm" method="POST" action="" autocomplete="off">
+    <input type="text" name="text5"/>
+    <input type="password" name="password5" autocomplete="off"/>
+</form>
+<!-- no form associated with this password entry -->
+<input type="password" name="password6" autocomplete="off"/>
+<form id="Password" name="ChangedOnLoad" method="POST" action="">
+    <input type="text" name="text6"/>
+    <input type="password" name="password7"/>
+</form>
+<form id="Search" name="NotLogin" method="GET" action="">
+    <input type="text" name="text7" autocomplete="off"/>
 </form>
 </body>
 </html>
