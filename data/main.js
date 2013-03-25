@@ -11,7 +11,7 @@
 
 function go() {
   var autos = document.querySelectorAll("[autocomplete=off]"), item, subitems, i, j;
-  console.log("LENGTH", document.querySelectorAll("[autocomplete=off]").length);
+  //console.log("LENGTH", document.querySelectorAll("[autocomplete=off]").length);
   for (i = 0; i < autos.length; i += 1) {
     item = autos.item(i);
     // password inputs inside forms
