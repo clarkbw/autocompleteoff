@@ -27,7 +27,7 @@ exports.test_open_tab = function (test) {
     test.assertEqual(tab.url, HTML_URI, "tab url is not correct");
     tab.attach({
       // we use a timeout here to ensure that our page-mod could run before we report back results
-      contentScript: 'window.setTimeout(function run() { self.postMessage(document.querySelectorAll("[autocomplete=off]").length); }, 1000);',
+      contentScript: 'window.setTimeout(function run() { self.postMessage(document.querySelectorAll("[autocomplete=off]").length); }, 3 * 1000);',
       onMessage: function (message) {
         test.assertEqual(message, 1, "should have only found 1 item with the autocomplete=off result");
         test.done();
