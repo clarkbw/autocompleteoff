@@ -2,8 +2,8 @@
     "name": "autocompleteoff", 
     "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
     "author": "Bryan Clark (http://clarkbw.net/) <clarkbw@gmail.com>", 
-    "version": "1.2",
-    "fullName": "Auto-Complete Off", 
+    "version": "1.5",
+    "fullName": "Auto-Complete On",
     "id": "jid1-KZsolV3q36BKQw", 
     "description": "Allows Firefox to remember all username and passwords.  Tries not to interfere with other types of forms.",
     "repository": {
