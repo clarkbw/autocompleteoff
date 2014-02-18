@@ -37,3 +37,7 @@ exports.test_open_tab = function (test) {
   tabs.open(HTML_URI);
   test.waitUntilDone();
 };
+
+exports.test_pref = function (test) {
+  test.assert(require("sdk/preferences/service").get("signon.overrideAutocomplete"));
+};
