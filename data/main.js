@@ -36,8 +36,10 @@ function scrub(item) {
   }
 }
 function go() {
-  var autos = document.querySelectorAll("[autocomplete=off]"), item, i;
-  //console.log("LENGTH", document.querySelectorAll("[autocomplete=off]").length);
+  var autos = document.querySelectorAll("[autocomplete=off]"),
+      item,
+      i;
+  // console.log("LENGTH", document.querySelectorAll("[autocomplete=off]").length);
   for (i = 0; i < autos.length; i += 1) {
     item = autos.item(i);
     scrub(item);
