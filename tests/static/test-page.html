@@ -6,18 +6,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $("input[name=password7]").attr("autocomplete", "off");
-            window.setTimeout(
-                            function () {
-                                $("<form id='ajax'/>").append(
-                                    $("<input id='ajaxpassword' type='password' autocomplete='off'/>"),
-                                    $("<input id='ajaxtext' type='text' autocomplete='off'/>")
-                                ).appendTo('body');
-                            },
-                            1000);
+    function ready(fn) {
+      if (document.readyState != 'loading'){
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+    </script>
+    <script type="text/javascript">
+      ready(function () {
+        document.querySelector('input[name=password7]').setAttribute("autocomplete", "off");
+        window.setTimeout(function () {
+                          var body = document.querySelector('body');
+                          var div = document.createElement('div');
+                          div.innerHTML = "<form id='ajax'>" +
+                                           "<input id='ajaxpassword' type='password' autocomplete='off'/>" +
+                                           "<input id='ajaxtext' type='text' autocomplete='off'/>" +
+                                           "</form>";
+                          body.appendChild(div);
+                        }, 1000);
         });
     </script>
 </head>
